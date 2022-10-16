@@ -8,9 +8,15 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <style>
+      section{
+        min-height: 470px;
+      }
+    </style>
+
+    <title>My Portfolio</title>
   </head>
-  <body>
+  <body class="mt-5">
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
             <a class="navbar-brand" href="#">Chaerul Anwar</a>
@@ -30,36 +36,40 @@
 
       <div class="jumbotron jumbotron-fluid">
         <div class="container text-center">
-            <img src="img/profile1.png" width="300">
+            <img src="img/profile1.png" width="25%" class="rounded-circle img-thumbnail">
           <h1 class="display-4">Chaerul Anwar</h1>
           <p class="lead">Mahasiswa UBSI</p>
         </div>
       </div>
 
 
+      <section id="about" class="about">
       <div class="container">
-        <div class="row">
+        <div class="row mb-4">
             <div class="col text-center">
-                <h1>About</h1>
+                <h2 >About</h2>
             </div>
         </div>
-        <div class="row">
-            <div class="col text-center">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis tempora ratione dolor fugiat maiores explicabo nisi vel nemo quasi saepe, iure, quisquam qui numquam excepturi, animi voluptatum nam fuga non.</p>
+        <div class="row justify-content-center">
+            <div class="col-md-5 text-center">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore rem alias dolor nihil explicabo incidunt cumque obcaecati, esse aperiam, placeat, deserunt autem ratione accusamus ab quisquam assumenda cum a accusantium. Voluptatem enim quos praesentium illum totam nemo modi vel omnis.</p>
             </div>
-            <div class="col text-center">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis aspernatur consequatur mollitia consectetur, incidunt neque ad, harum, modi velit sed nesciunt magnam eaque perferendis itaque fuga unde impedit. Quaerat, magnam!</p>
+            <div class="col-md-5 text-center">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque dicta ullam quos laudantium. Officiis velit repudiandae minus vel asperiores sequi temporibus animi esse ut, qui ea quis sit exercitationem autem cum labore similique doloribus necessitatibus perspiciatis minima nihil? At unde itaque quam laboriosam.</p>
             </div>
         </div>
       </div>
+      </section>
 
+      <section id="portfolio" class="portfolio bg-light pb-4">
       <div class="container">
-        <div class="row">
+        <div class="row mb-4 pt-4">
             <div class="col text-center">
                 <h1>Portfolio</h1>
             </div>
         </div>
-        <div class="row">
+
+        <div class="row mb-4">
             <div class="col-md">
                 <div class="card">
                     <img class="card-img-top" src="img/thumbs/1.png" alt="Card image cap">
@@ -85,7 +95,7 @@
                 </div>
             </div>
         </div>
-        <div class="row">
+        <div class="row mb-4">
             <div class="col-md">
                 <div class="card">
                     <img class="card-img-top" src="img/thumbs/4.png" alt="Card image cap">
@@ -112,6 +122,55 @@
             </div>
         </div>
       </div>
+      </section>
+
+      <section id="contact" class="contact">
+        <div class="container">
+          <div class="row pt-4 mb-4">
+            <div class="col text-center">
+              <h2>Contact Us</h2>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-lg-4">
+              <div class="card text-white bg-primary mb-3 text-center">
+                <div class="card-body">
+                  <h5 class="card-title">Contact Us</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. In, aspernatur!</p>
+                </div>
+              </div>
+              <ul class="list-group">
+                <li class="list-group-item"><h1>My Location</h1></li>
+                <li class="list-group-item">My Address</li>
+                <li class="list-group-item">Jl. Fatahillah, Perbutulan, Sumber, Cirebon</li>
+                <li class="list-group-item">West Java, Indonesia</li>
+              </ul>
+            </div>
+            <div class="col-lg-6">
+              <form>
+                <div class="form-group">
+                  <label for="nama">Name</label>
+                  <input type="text" class="form-control" id="nama">
+                </div>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="text" class="form-control" id="email">
+                </div>
+                <div class="form-group">
+                  <label for="telp">Phone Number</label>
+                  <input type="text" class="form-control" id="telp">
+                </div>
+                <div class="form-group">
+                  <label for="message">Message</label>
+                  <textarea name="massage" id="massage" class="form-control"></textarea>
+                </div>
+                <div class="form-group">
+                  <button type="button" class="btn btn-primary">Submit</button>
+                </div>
+              </form>
+            </div>
+          </div>
+      </section>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
